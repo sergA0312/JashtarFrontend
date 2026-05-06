@@ -6,16 +6,21 @@ import { projects } from '../Staticdata/projects';
 import { notFound } from 'next/navigation';
 import scss from './ProjectDetail.module.scss';
 
-interface Props {
-  params: Promise<{
-    slug: string; 
-  }>;
-}
 
-export default async function ProjectDetail({ params }: Props) {
-  const { slug } = await params; 
+export default async function ProjectDetail({ params }: any) {
+  const resolvedParams = params ? await params : null;
+  const slug = resolvedParams?.slug;
+
+  // 2. Если мы на этапе сборки и slug еще нет, просто возвращаем пустоту
+  if (!slug) {
+    return null; 
+  }
+
   const project = projects.find((p) => String(p.id) === slug);
-  if (!project) return notFound();
+  
+  if (!project) {
+    return notFound();
+  }
 
   return (
     <div>
