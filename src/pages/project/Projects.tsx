@@ -26,5 +26,4 @@ const Projects = () => {
     </>
   );
 };
-
-export default [];
+export default function Dummy() { return null; }
