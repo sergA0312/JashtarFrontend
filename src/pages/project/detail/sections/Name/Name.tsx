@@ -24,4 +24,4 @@ export const Name = ({ title, fullText, image }: Props) => {
     </section>
   );
 };
-export default function DummySection() { return null; }
+export default Name;
