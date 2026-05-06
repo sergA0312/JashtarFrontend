@@ -34,4 +34,4 @@ export const Aim = ({ title, goals = [] }: AimProps) => {
     </section>
   );
 };
-export default function DummySection() { return null; }
+export default Aim;
