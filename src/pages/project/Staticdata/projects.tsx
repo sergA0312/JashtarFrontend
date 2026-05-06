@@ -1,3 +1,4 @@
+import React from 'react';
 export const projects = [
   {
     id: 1,
@@ -115,5 +116,5 @@ export const projects = [
     ],
   },
 ];
-const DummyProjects = () => null;
-export default DummyProjects;
+const FinalDummy = () => { return null; };
+export default FinalDummy;
