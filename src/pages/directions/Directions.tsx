@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { CardActivity } from "@/src/shared/ui/CardActivity/CardActivity";
+import { CardActivity } from "@/src/shared/ui/cardActivity/CardActivity";
 
 const title = "Волонтерство";
 const shortText = "Помогай другим и твори добро!";

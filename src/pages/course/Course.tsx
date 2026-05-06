@@ -1,64 +1,75 @@
-'use client';
-import { CardActivity } from '@/src/shared/ui/CardActivity/CardActivity';
+"use client";
+import { CardActivity } from "@/src/shared/ui/cardActivity/CardActivity";
 
 const data = [
   {
     id: 1,
-    title: 'IT-волонтерство',
-    description: 'Помогай некоммерческим проектам с разработкой сайтов и цифровых решений',
-    image: '/assets/images/Course/IT.png',
+    title: "IT-волонтерство",
+    description:
+      "Помогай некоммерческим проектам с разработкой сайтов и цифровых решений",
+    image: "/assets/images/Course/IT.png",
   },
   {
     id: 2,
-    title: 'Администрирование',
-    description: 'Помощь в организации внутренних процессов и координация работы штаба',
-    image: '/assets/images/Course/admin.png',
+    title: "Администрирование",
+    description:
+      "Помощь в организации внутренних процессов и координация работы штаба",
+    image: "/assets/images/Course/admin.png",
   },
   {
     id: 3,
-    title: 'Онлайн-наставничество',
-    description: 'Делись знаниями и опытом с молодежью через дистанционные платформы',
-    image: '/assets/images/Course/mentoring.png',
+    title: "Онлайн-наставничество",
+    description:
+      "Делись знаниями и опытом с молодежью через дистанционные платформы",
+    image: "/assets/images/Course/mentoring.png",
   },
   {
     id: 4,
-    title: 'Языковая поддержка',
-    description: 'Обучение иностранным языкам и помощь в переводе образовательных материалов',
-    image: '/assets/images/Course/languages.png',
+    title: "Языковая поддержка",
+    description:
+      "Обучение иностранным языкам и помощь в переводе образовательных материалов",
+    image: "/assets/images/Course/languages.png",
   },
   {
     id: 5,
-    title: 'Тренинги и мастер-классы',
-    description: 'Проведение публичных лекций и обучающих программ для сообщества',
-    image: '/assets/images/Course/workshop.png',
+    title: "Тренинги и мастер-классы",
+    description:
+      "Проведение публичных лекций и обучающих программ для сообщества",
+    image: "/assets/images/Course/workshop.png",
   },
   {
     id: 6,
-    title: 'Социальный копирайтинг',
-    description: 'Пиши вдохновляющие истории о волонтерах и создавай контент для соцсетей',
-    image: '/assets/images/Course/content.png',
+    title: "Социальный копирайтинг",
+    description:
+      "Пиши вдохновляющие истории о волонтерах и создавай контент для соцсетей",
+    image: "/assets/images/Course/content.png",
   },
 ];
 
 export default function Course() {
   const handleCourseClick = (id: number) => {
-    console.log('Записаться на курс:', id);
+    console.log("Записаться на курс:", id);
   };
 
   return (
-    <div style={{ padding: '40px 0' }}>
-      <div className='container'>
-        <h1 style={{
-          display:"flex",
-          justifyContent:"center",
-          marginBottom:"40px",
-        }}> Курсы </h1>
+    <div style={{ padding: "40px 0" }}>
+      <div className="container">
+        <h1
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginBottom: "40px",
+          }}
+        >
+          {" "}
+          Курсы{" "}
+        </h1>
         <div
           style={{
-            display: 'flex',
-            width: '100%',
-            flexDirection: 'column',
-            gap: '20px',
+            display: "flex",
+            width: "100%",
+            flexDirection: "column",
+            gap: "20px",
           }}
         >
           {data.map((item) => (
