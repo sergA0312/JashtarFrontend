@@ -1,3 +1,5 @@
+
+import React from 'react';
 import Image from "next/image";
 import scss from "./Gallary.module.scss";
 
@@ -30,4 +32,5 @@ export function Gallery({ images = [] }: Props) {
     </section>
   );
 }
-export default Gallery;
+const FinalDummy = () => { return null; };
+export default FinalDummy;
