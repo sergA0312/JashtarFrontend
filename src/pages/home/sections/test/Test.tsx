@@ -67,4 +67,4 @@ export const Test: FC = () => {
 		</section>
 	);
 };
-export default function DummyTest() { return null; }
+export default Test;
