@@ -1,7 +1,10 @@
 "use client";
 
+import scss from "./Directions.module.scss";
+
 import { useState } from "react";
 import { CardActivity } from "@/src/shared/ui/cardActivity/CardActivity";
+import { NavPanel } from "@/src/shared/ui/navpanel/NavPanel";
 
 const title = "Волонтерство";
 const shortText = "Помогай другим и твори добро!";
@@ -67,31 +70,30 @@ export default function DirectionsPage() {
   };
 
   return (
-    <div style={{ padding: "40px 0" }}>
-      <div className="container">
-        <div
-          style={{
-            display: "flex",
-            width: "100%",
-            flexDirection: "column",
-            gap: "20px",
-          }}
-        >
-          {data.slice(0, 6).map((item) => (
-            <CardActivity
-              key={item.id}
-              image={item.image}
-              title={item.title}
-              description={item.description}
-              fullText={item.fullText}
-              color={item.color}
-              isOpen={openId === item.id}
-              course={false}
-              onClick={() => toggleCard(item.id)}
-            />
-          ))}
+    <>
+      <NavPanel
+        items={[{ label: "Направление деятельности", href: "/directions" }]}
+      />
+      <section className={scss.directionSection}>
+        <div className="container">
+          <div className={scss.content}>
+            <h1 className={scss.title}>Направление деятельности</h1>
+            {data.slice(0, 6).map((item) => (
+              <CardActivity
+                key={item.id}
+                image={item.image}
+                title={item.title}
+                description={item.description}
+                fullText={item.fullText}
+                color={item.color}
+                isOpen={openId === item.id}
+                course={false}
+                onClick={() => toggleCard(item.id)}
+              />
+            ))}
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }

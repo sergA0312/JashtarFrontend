@@ -1,5 +1,6 @@
 "use client";
 import { CardActivity } from "@/src/shared/ui/cardActivity/CardActivity";
+import { NavPanel } from "@/src/shared/ui/navpanel/NavPanel";
 
 const data = [
   {
@@ -52,39 +53,42 @@ export default function Course() {
   };
 
   return (
-    <div style={{ padding: "40px 0" }}>
-      <div className="container">
-        <h1
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            marginBottom: "40px",
-          }}
-        >
-          {" "}
-          Курсы{" "}
-        </h1>
-        <div
-          style={{
-            display: "flex",
-            width: "100%",
-            flexDirection: "column",
-            gap: "20px",
-          }}
-        >
-          {data.map((item) => (
-            <CardActivity
-              key={item.id}
-              image={item.image}
-              title={item.title}
-              description={item.description}
-              isOpen={false}
-              Course={true}
-              onClick={() => handleCourseClick(item.id)}
-            />
-          ))}
+    <>
+      <NavPanel items={[{ label: "Курсы", href: "/course" }]} />
+      <section style={{ paddingBlock: 30 }}>
+        <div className="container">
+          <h1
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginBottom: "40px",
+            }}
+          >
+            {" "}
+            Курсы{" "}
+          </h1>
+          <div
+            style={{
+              display: "flex",
+              width: "100%",
+              flexDirection: "column",
+              gap: "20px",
+            }}
+          >
+            {data.map((item) => (
+              <CardActivity
+                key={item.id}
+                image={item.image}
+                title={item.title}
+                description={item.description}
+                isOpen={false}
+                course={true}
+                onClick={() => handleCourseClick(item.id)}
+              />
+            ))}
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }

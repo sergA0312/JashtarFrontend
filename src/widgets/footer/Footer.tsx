@@ -12,17 +12,17 @@ const Footer = () => {
     {
       id: 1,
       name: "О движении",
-      link: "/",
+      link: "/about-movement",
     },
     {
       id: 2,
       name: "Направления деятельности",
-      link: "/",
+      link: "/directions",
     },
     {
       id: 3,
       name: "Проекты",
-      link: "/",
+      link: "/projects",
     },
     {
       id: 4,
@@ -34,7 +34,7 @@ const Footer = () => {
     {
       id: 1,
       name: "Новости",
-      link: "/",
+      link: "/news",
     },
     {
       id: 2,
@@ -44,7 +44,7 @@ const Footer = () => {
     {
       id: 3,
       name: "Медиа",
-      link: "/",
+      link: "/media",
     },
     {
       id: 4,
@@ -54,7 +54,7 @@ const Footer = () => {
     {
       id: 5,
       name: "Список курсов",
-      link: "/",
+      link: "/course",
     },
   ];
   return (
