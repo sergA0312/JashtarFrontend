@@ -10,4 +10,4 @@ export const HomePage: FC = () => {
 		</>
 	);
 };
-export default function Dummy() { return null; }
+export default HomePage;
