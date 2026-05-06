@@ -115,3 +115,5 @@ export const projects = [
     ],
   },
 ];
+const DummyProjects = () => null;
+export default DummyProjects;
