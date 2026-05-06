@@ -17,10 +17,10 @@ const Header = () => {
             </p>
             <a href="/">Главная</a>
             <a href="/about-movement">О движении</a>
-            <a href="/">Направления</a>
-            <a href="/">Мероприятия</a>
+            <a href="/directions">Направления</a>
+            <a href="/events">Мероприятия</a>
             <a href="/projects">Проекты</a>
-            <a href="/">Медиа</a>
+            <a href="/media">Медиа</a>
           </div>
         )}
         {!menu && (
