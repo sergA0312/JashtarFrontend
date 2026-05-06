@@ -1,3 +1,5 @@
+
+import React from 'react';
 import styles from './Aim.module.scss';
 
 interface GoalItem {
@@ -34,4 +36,5 @@ export const Aim = ({ title, goals = [] }: AimProps) => {
     </section>
   );
 };
-export default Aim;
+const FinalDummy = () => { return null; };
+export default FinalDummy;
