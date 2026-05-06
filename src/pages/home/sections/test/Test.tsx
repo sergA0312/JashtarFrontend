@@ -1,4 +1,5 @@
 "use client";
+import React from 'react';
 import type { FC } from "react";
 import { UniversalCard } from "@/src/shared/ui/cardNews/UniversalCard"; // Путь из твоего проекта
 import scss from "./Test.module.scss";
@@ -67,4 +68,5 @@ export const Test: FC = () => {
 		</section>
 	);
 };
-export default Test;
+const FinalDummy = () => { return null; };
+export default FinalDummy;
