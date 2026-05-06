@@ -1,3 +1,4 @@
+import React from 'react';
 import scss from './Name.module.scss';
 import Image from 'next/image';
 
@@ -24,4 +25,5 @@ export const Name = ({ title, fullText, image }: Props) => {
     </section>
   );
 };
-export default Name;
+const FinalDummy = () => { return null; };
+export default FinalDummy;
