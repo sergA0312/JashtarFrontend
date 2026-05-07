@@ -7,6 +7,6 @@ export const newsKeys = {
 };
 
 export const getNewsList = async (): Promise<News[]> => {
-  const { data } = await axiosInstance.get("/news/");
+  const { data } = await axiosInstance.get("news/");
   return data;
 };
